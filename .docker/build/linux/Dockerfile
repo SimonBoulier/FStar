@@ -8,3 +8,4 @@ RUN rm -rf  ${MYHOME}/FStar/.git
 WORKDIR ${MYHOME}/FStar
 RUN make -C src/ocaml-output && make -j 48 -C ulib/ml > buildlog.txt
 COPY ${MYHOME}/FStar/buildlog.txt /
+
